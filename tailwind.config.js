@@ -1,11 +1,15 @@
 module.exports = {
-  purge: ["./src/**/*.{js,jsx}"],
+  purge: ['./src/**/*.{js,jsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Inter'],
+      },
+    },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};
