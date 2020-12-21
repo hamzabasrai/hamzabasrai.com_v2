@@ -5,7 +5,7 @@ import Menu from '../assets/menu.svg';
 import Cross from '../assets/cross.svg';
 
 const NavLink = ({ title, ...props }) => (
-  <Link className="font-medium text-xl tracking-tight" {...props}>
+  <Link className="text-xl" {...props}>
     {title}
   </Link>
 );
@@ -16,10 +16,10 @@ const Navbar = () => {
   return (
     <nav>
       <div className="flex items-center justify-between">
-        <h1 className="font-bold text-3xl md:hidden">
+        <h1 className="font-medium text-3xl md:hidden">
           <Link to="/">HB</Link>
         </h1>
-        <h1 className="hidden font-semibold text-3xl tracking-tight md:block">
+        <h1 className="hidden font-medium text-3xl md:block">
           <Link to="/">Hamza Basrai</Link>
         </h1>
 
