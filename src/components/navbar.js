@@ -1,13 +1,23 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
-import Menu from '../assets/menu.svg';
-import Cross from '../assets/cross.svg';
+import Menu from '../assets/menu.inline.svg';
+import Cross from '../assets/cross.inline.svg';
 
 const NavLink = ({ title, ...props }) => (
   <Link className="text-xl" {...props}>
     {title}
   </Link>
+);
+
+// Generate NavLinks from query data
+const NavItems = () => (
+  <>
+    <NavLink to="/" title="About" />
+    <NavLink to="/" title="Projects" />
+    <NavLink to="/" title="Collections" />
+    <NavLink to="/" title="Resume" />
+  </>
 );
 
 const Navbar = () => {
@@ -26,10 +36,7 @@ const Navbar = () => {
         {/* Desktop Menu Links*/}
         <div className="hidden md:block">
           <div className="flex justify-end space-x-8">
-            <NavLink to="/" title="About" />
-            <NavLink to="/" title="Projects" />
-            <NavLink to="/" title="Collections" />
-            <NavLink to="/" title="Resume" />
+            <NavItems />
           </div>
         </div>
 
@@ -54,10 +61,7 @@ const Navbar = () => {
         className={`${menuIsOpen ? 'block' : 'hidden'} md:hidden`}
       >
         <div className="mt-4 flex flex-col space-y-2">
-          <NavLink to="/" title="About" />
-          <NavLink to="/" title="Projects" />
-          <NavLink to="/" title="Collections" />
-          <NavLink to="/" title="Resume" />
+          <NavItems />
         </div>
       </div>
     </nav>
