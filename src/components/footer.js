@@ -17,7 +17,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <GitHub className="h-7 w-7 md:h-8 md:w-8 transition duration-100 opacity-75 hover:opacity-100 fill-current" />
+              <GitHub className="h-7 w-7 md:h-8 md:w-8 opacity-75 hover:opacity-100 fill-current" />
             </a>
           </span>
           <span>
@@ -28,7 +28,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <LinkedIn className="h-7 w-7 md:h-8 md:w-8 transition duration-100 opacity-75 hover:opacity-100 fill-current" />
+              <LinkedIn className="h-7 w-7 md:h-8 md:w-8 opacity-75 hover:opacity-100 fill-current" />
             </a>
           </span>
         </div>
