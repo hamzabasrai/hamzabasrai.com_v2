@@ -24,13 +24,13 @@ const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = React.useState(false);
 
   return (
-    <header className="mt-4 md:mt-8 py-4 sticky top-0 z-10">
+    <header className="py-4 md:pt-8 sticky top-0 z-10">
       <nav className="content-wrapper">
         <div className="flex items-center justify-between">
-          <h1 className="font-medium text-3xl text-primary md:hidden">
+          <h1 className="font-medium text-3xl text-secondary md:hidden">
             <Link to="/">HB</Link>
           </h1>
-          <h1 className="hidden font-medium text-3xl text-primary md:block">
+          <h1 className="hidden font-medium text-3xl text-secondary md:block">
             <Link to="/">Hamza Basrai</Link>
           </h1>
 
@@ -48,9 +48,9 @@ const Header = () => {
               onClick={() => setMenuIsOpen(!menuIsOpen)}
             >
               {menuIsOpen ? (
-                <Cross className="h-10 w-10" />
+                <Cross className="h-9 w-9" />
               ) : (
-                <Menu className="h-10 w-10" />
+                <Menu className="h-9 w-9" />
               )}
             </button>
           </div>
