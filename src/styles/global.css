@@ -1,12 +1,46 @@
+:root {
+  --color-bg-accent: #63b3ed;
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #edf2f7;
+  --color-bg-accent-hover: #4299e1;
+
+  --color-text-accent: #2b6cb0;
+  --color-text-primary: #2d3748;
+  --color-text-secondary: #4a5568;
+  --color-text-tertiary: #4a5568;
+  --color-text-on-accent: #f7fafc;
+
+  --color-fill-primary: #b1d9f6;
+  --color-fill-secondary: #edf2f7;
+
+  --color-gradient-accent1: rgba(49, 130, 206, 1);
+  --color-gradient-accent2: rgba(79, 209, 197, 1);
+}
+
+.dark {
+  --color-bg-accent: #81e6d9;
+  --color-bg-primary: #1a202c;
+  --color-bg-secondary: #161b25;
+  --color-bg-accent-hover: #4fd1c5;
+
+  --color-text-accent: #81e6d9;
+  --color-text-primary: #f7fafc;
+  --color-text-secondary: #e2e8f0;
+  --color-text-tertiary: #a0aec0;
+  --color-text-on-accent: #1a202c;
+
+  --color-fill-primary: #81e6d9;
+  --color-fill-secondary: #161b25;
+
+  --color-gradient-accent1: rgba(49, 130, 206, 1);
+  --color-gradient-accent2: rgba(79, 209, 197, 1);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-blueGray-50;
-  }
-
   h1,
   h2,
   h3,
@@ -16,5 +50,11 @@
   p,
   a {
     @apply tracking-tight;
+  }
+}
+
+@layer utilities {
+  .content-wrapper {
+    @apply container mx-auto px-4 md:px-10;
   }
 }
