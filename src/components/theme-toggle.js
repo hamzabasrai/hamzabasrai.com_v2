@@ -4,11 +4,9 @@ import Moon from '../assets/moon.inline.svg';
 import Sun from '../assets/sun.inline.svg';
 
 const ThemeToggle = () => {
-  const savedTheme = JSON.parse(localStorage.getItem('isDark'));
-  const [isDark, setIsDark] = React.useState(savedTheme);
+  const [isDark, setIsDark] = React.useState(false);
 
   React.useEffect(() => {
-    localStorage.setItem('isDark', isDark);
     const htmlNode = document.querySelector('html');
     if (isDark) {
       htmlNode.classList.add('dark');
