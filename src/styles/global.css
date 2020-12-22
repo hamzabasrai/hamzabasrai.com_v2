@@ -1,3 +1,5 @@
+@import url('https://rsms.me/inter/inter.css');
+
 :root {
   --color-bg-accent: #63b3ed;
   --color-bg-primary: #ffffff;
@@ -43,7 +45,7 @@
 @layer base {
   html * {
     @apply transition-all;
-    @apply duration-300;
+    @apply duration-200;
   }
 
   body {
