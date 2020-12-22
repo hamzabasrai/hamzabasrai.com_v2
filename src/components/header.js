@@ -5,7 +5,7 @@ import Menu from '../assets/menu.inline.svg';
 import Cross from '../assets/cross.inline.svg';
 
 const NavLink = ({ title, ...props }) => (
-  <Link className="text-xl" {...props}>
+  <Link className="text-xl text-secondary hover:text-accent" {...props}>
     {title}
   </Link>
 );
@@ -27,10 +27,10 @@ const Header = () => {
     <header className="mt-4 md:mt-8 py-4 sticky top-0 z-10">
       <nav className="content-wrapper">
         <div className="flex items-center justify-between">
-          <h1 className="font-medium text-3xl md:hidden">
+          <h1 className="font-medium text-3xl text-primary md:hidden">
             <Link to="/">HB</Link>
           </h1>
-          <h1 className="hidden font-medium text-3xl md:block">
+          <h1 className="hidden font-medium text-3xl text-primary md:block">
             <Link to="/">Hamza Basrai</Link>
           </h1>
 
