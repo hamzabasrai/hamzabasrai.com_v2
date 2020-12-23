@@ -25,7 +25,7 @@ const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = React.useState(false);
 
   return (
-    <header className="py-4 md:pt-8 sticky top-0 z-10 bg-primary">
+    <header className="pt-4 md:pb-4 md:pt-8 sticky top-0 z-10 bg-primary">
       <nav className="content-wrapper">
         <div className="flex items-center justify-between">
           <h1 className="font-medium text-secondary text-3xl md:hidden">
