@@ -21,9 +21,9 @@ const ThemeToggle = () => {
       onClick={() => setIsDark(!isDark)}
     >
       {isDark ? (
-        <Sun className="h-8 w-8 hover:text-accent" />
+        <Sun className="h-8 w-8 text-secondary hover:text-accent" />
       ) : (
-        <Moon className="h-8 w-8 hover:text-accent" />
+        <Moon className="h-8 w-8 text-secondary hover:text-accent" />
       )}
     </button>
   );

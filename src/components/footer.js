@@ -5,9 +5,11 @@ import LinkedIn from '../assets/linkedin.inline.svg';
 
 const Footer = () => {
   return (
-    <footer className="text-primary bg-secondary py-2 lg:py-4">
+    <footer className="bg-secondary py-2 lg:py-4">
       <div className="content-wrapper flex justify-between items-center">
-        <p>© {new Date().getFullYear()} Hamza Basrai</p>
+        <p className="text-primary">
+          © {new Date().getFullYear()} Hamza Basrai
+        </p>
         <div className="space-x-3 md:space-x-4 flex justify-end">
           <span>
             <a
@@ -17,7 +19,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <GitHub className="h-7 w-7 md:h-8 md:w-8 opacity-75 hover:opacity-100 fill-current" />
+              <GitHub className="h-7 w-7 md:h-8 md:w-8 text-primary opacity-75 hover:opacity-100 fill-current" />
             </a>
           </span>
           <span>
@@ -28,7 +30,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <LinkedIn className="h-7 w-7 md:h-8 md:w-8 opacity-75 hover:opacity-100 fill-current" />
+              <LinkedIn className="h-7 w-7 md:h-8 md:w-8 text-primary opacity-75 hover:opacity-100 fill-current" />
             </a>
           </span>
         </div>
