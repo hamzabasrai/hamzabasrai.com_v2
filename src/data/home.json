@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Hi, I'm Hamza",
+    "subtitle": "I am a software engineer currently looking for new opportunities. This site is my way of sharing my work and passion with the rest of the internet!",
+    "pages": [
+      {
+        "title": "About 👀",
+        "subtitle": "Get to know me a bit better",
+        "to": "/about"
+      },
+      {
+        "title": "Projects 💻",
+        "subtitle": "See some stuff I've built",
+        "to": "/projects"
+      },
+      {
+        "title": "Collections 📚",
+        "subtitle": "A place to catalogue my interests",
+        "to": "/collections"
+      }
+    ]
+  }
+]
